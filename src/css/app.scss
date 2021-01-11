@@ -1,0 +1,34 @@
+// app global css in SCSS form
+
+@page {
+  size: A4;
+  margin: 0;
+}
+.print-hide{
+  @media print {
+    display: none;
+  }
+}
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+  .a4 {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+
+  .q-layout{
+    background: white!important;
+  }
+  .q-page-container{
+    padding: 0!important;
+  }
+}
