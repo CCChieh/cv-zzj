@@ -2,6 +2,7 @@
   <q-page>
     <a4>
       <a href="#cd">产品介绍</a>
+      {{$q.screen}}
       <router-link to="/#cd">
         cd
       </router-link>

@@ -1,5 +1,5 @@
 <template>
-  <q-header elevated class="bg-primary text-white print-hide" height-hint="98">
+  <q-header elevated class="header text-white print-hide" height-hint="98">
     <q-toolbar>
       <q-btn dense flat round icon="menu" @click="$emit('update:left', !left)"/>
 
@@ -11,10 +11,9 @@
       </q-toolbar-title>
     </q-toolbar>
 
-    <q-tabs align="left">
-      <q-route-tab to="/page1" label="Page One"/>
-      <q-route-tab to="/page2" label="Page Two"/>
-      <q-route-tab to="/page3" label="Page Three"/>
+    <q-tabs align="center" inline-label>
+      <q-tab name="zhihu" icon="fab fa-zhihu"/>
+      <q-tab name="github" icon="fab fa-github"/>
     </q-tabs>
   </q-header>
 </template>
@@ -31,6 +30,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.header {
+  background: linear-gradient(145deg, $blue-grey 11%, $blue-grey-8 75%);
+}
 </style>

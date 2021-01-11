@@ -20,8 +20,8 @@ export default {
   background: white;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
   margin: 8mm auto;
-  @media (max-width: 810px) {
-    margin: 0;
+  @media (max-width: $breakpoint-sm) {
+    margin: 0 auto;
     border-radius: initial;
     width: initial;
     min-height: initial;

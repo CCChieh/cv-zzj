@@ -1,9 +1,9 @@
 <template>
-  <q-footer elevated class="bg-grey-8 text-white print-hide">
+  <q-footer class="bg-blue-grey text-white print-hide">
     <q-toolbar>
       <q-toolbar-title>
         <q-avatar>
-          <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
+          <img src="~assets/head.jpg">
         </q-avatar>
         Title
       </q-toolbar-title>
