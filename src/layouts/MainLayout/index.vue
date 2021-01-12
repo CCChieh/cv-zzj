@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHh LpR lff" class="bg-blue-grey-3">
+  <q-layout view="HHh LpR lff" class="bg-blue-grey-3">
     <layout-header :left.sync="left"/>
     <layout-drawer :left="left"/>
     <q-page-container>

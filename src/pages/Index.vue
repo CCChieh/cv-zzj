@@ -3,6 +3,7 @@
     <a4>
       <a href="#cd">产品介绍</a>
       {{$q.screen}}
+      {{$store.getters['global/showFloatLogin']}}
       <router-link to="/#cd">
         cd
       </router-link>

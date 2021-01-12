@@ -1,5 +1,9 @@
 // app global css in SCSS form
 
+// 约束图片，避免溢出
+img{
+  max-width: 100%;
+}
 @page {
   size: A4;
   margin: 0;
