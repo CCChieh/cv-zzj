@@ -3,7 +3,7 @@
     <q-toolbar>
       <q-toolbar-title>
         <q-avatar>
-          <img src="~assets/head.jpg">
+          <img src="~assets/head.png">
         </q-avatar>
         Title
       </q-toolbar-title>

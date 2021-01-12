@@ -2,7 +2,7 @@
   "name": "cv-zzj",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "productName": "郑智杰的简历",
   "author": "chieh <email@zzj.cool>",
   "private": true,
   "scripts": {

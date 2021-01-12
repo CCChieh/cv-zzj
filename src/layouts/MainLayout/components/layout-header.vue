@@ -5,7 +5,7 @@
              @click="$store.commit('app/SET_Left_Drawer', !$store.getters['app/leftDrawer'])"/>
       <q-toolbar-title class="col-auto">
         <q-avatar>
-          <img src="~assets/head.jpg" alt="头像">
+          <img src="~assets/head.png" alt="头像">
         </q-avatar>
         郑智杰的简历
       </q-toolbar-title>
