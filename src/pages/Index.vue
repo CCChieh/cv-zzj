@@ -1,30 +1,18 @@
 <template>
   <q-page>
-    <div class="a4">
-      <a href="#cd">产品介绍</a>
-      {{ $q.screen }}
-      {{ $store.getters['global/showFloatLogin'] }}
-      <router-link to="/#cd">
-        cd
-      </router-link>
-      <img
-        alt="Quasar logo"
-        src="~assets/quasar-logo-full.svg"
-      >
-    </div>
-    <div class="a4">
-      <div id="cd">cd</div>
-      <img
-        alt="Quasar logo"
-        src="~assets/quasar-logo-full.svg"
-      >
+    <!--    page1-->
+    <div class="a4 q-py-lg q-px-xl">
+      <personal-information></personal-information>
     </div>
   </q-page>
 </template>
 
 <script>
 
+import PersonalInformation from 'components/personal-information'
+
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  components: { PersonalInformation }
 }
 </script>

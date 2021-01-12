@@ -33,7 +33,7 @@ module.exports = {
 
   plugins: [
     // https://eslint.vuejs.org/user-guide/#why-doesn-t-it-work-on-vue-file
-    // required to lint *.vue files
+    // required to lint *personal-information.vue files
     'vue',
 
   ],

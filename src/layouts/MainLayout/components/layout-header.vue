@@ -6,7 +6,7 @@
              class="col-auto"
              @click="$store.commit('app/SET_Left_Drawer', !$store.getters['app/leftDrawer'])"/>
       <q-toolbar-title class="col-auto">
-        郑智杰的简历
+        郑智杰
         <q-avatar>
           <img src="~assets/head.png" alt="头像">
         </q-avatar>

@@ -4,6 +4,11 @@
 img{
   max-width: 100%;
 }
+
+a:link, a:active, a:hover, a:visited {
+  color: unset;
+  text-decoration: none
+}
 @page {
   size: A4;
   margin: 0;
@@ -57,3 +62,4 @@ img{
     box-shadow: initial;
   }
 }
+
