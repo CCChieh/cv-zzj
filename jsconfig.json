@@ -30,6 +30,7 @@
   },
   "exclude": [
     "dist",
+    "docs",
     ".quasar",
     "node_modules"
   ]
