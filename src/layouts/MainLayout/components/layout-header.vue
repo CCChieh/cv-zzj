@@ -1,7 +1,8 @@
 <template>
   <q-header elevated class="header text-white print-hide" height-hint="98">
     <q-toolbar class="row justify-between">
-      <q-btn dense flat round icon="menu"
+      <q-btn dense flat round
+             :icon="$store.getters['app/leftDrawer']?'format_indent_decrease':'format_indent_increase'"
              class="col-auto"
              @click="$store.commit('app/SET_Left_Drawer', !$store.getters['app/leftDrawer'])"/>
       <q-toolbar-title class="col-auto">
