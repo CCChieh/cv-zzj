@@ -12,23 +12,44 @@
       </q-toolbar-title>
     </q-toolbar>
 
-    <q-tabs class="a4-container" inline-label align="justify">
-      <q-tab name="zhihu" icon="fab fa-zhihu"/>
-      <q-tab name="github" icon="fab fa-github"/>
+    <q-tabs class="a4-container" inline-label align="justify" @input="jump">
+      <q-tab name="zhihu" icon="fab fa-zhihu">
+        <q-tooltip>
+          {{ link.zhihu }}
+        </q-tooltip>
+      </q-tab>
+      <q-tab name="github" icon="fab fa-github">
+        <q-tooltip>
+          {{ link.github }}
+        </q-tooltip>
+      </q-tab>
     </q-tabs>
 
   </q-header>
 </template>
 
 <script>
+import { openURL } from 'quasar'
+import link from 'src/infomation/link'
+
 export default {
   name: 'LayoutHeader',
+  data () {
+    return {
+      link
+    }
+  },
   beforeCreate () {
     if (this.$q.screen.gt.md) {
       // 如果是
       this.$store.commit('app/SET_Left_Drawer', true)
     } else {
       this.$store.commit('app/SET_Left_Drawer', false)
+    }
+  },
+  methods: {
+    jump (name) {
+      openURL(link[name])
     }
   }
 }
