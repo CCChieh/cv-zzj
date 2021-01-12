@@ -1,28 +1,31 @@
 <template>
   <div class="row justify-between">
-    <div class="col-3 column justify-center q-col-gutter-md">
-      <div class="text-h3 text-weight-bold">
+    <div class="col-12 col-md-3 q-py-md q-py-md-none column justify-center items-center items-md-start q-col-gutter-md">
+
+      <div class="text-h3 text-weight-bold ">
         {{ personal.name }}
       </div>
-      <div class="text-subtitle1 text-weight-bold row q-col-gutter-md">
-        <div>
-          <q-icon name="fas fa-graduation-cap" size="xs"/>
+      <div class="text-subtitle1 text-weight-bold row ">
+        <div class="col-12">
+          <q-icon class="q-pr-md" name="fas fa-graduation-cap" size="xs"/>
           {{ personal.degree }}
         </div>
-        <div>
-          <q-icon name="fas fa-map-marker-alt" size="xs"/>
-          {{ personal.location }}
-        </div>
       </div>
-      <div class="row items-center">
-        <div class="text-weight-bold">主页：</div><a :href="link.homePage" target="_blank">{{ link.homePage }}</a>
+      <div class="text-subtitle1 text-weight-bold row ">
+        <div class="col-12">
+          <q-icon class="q-pr-md" name="fas fa-home" size="xs"/>
+          <a :href="link.homePage" target="_blank">{{ link.homePage }}</a>
+        </div>
       </div>
     </div>
     <!--    基本信息-->
-    <div class="col-4 text-grey-8 column justify-center">
+    <div class="col-12 col-sm-6 col-md-4 q-py-md q-py-md-none text-grey-8 column justify-center">
       <base-information-item
         label="年龄"
         :text="age(personal.birthday)"/>
+      <base-information-item
+        label="现居地"
+        :text="personal.location"/>
       <base-information-item
         label="学校"
         :text="personal.school"/>
@@ -31,7 +34,7 @@
         :text="personal.college"/>
     </div>
     <!--    联系方式-->
-    <div class="col-3 text-grey-8">
+    <div class="col-12 col-sm-6  col-md-3 q-py-md q-py-md-none text-grey-8">
       <contact-way-item
         :text="personal.email"
         :href="'mailto:'+personal.email"

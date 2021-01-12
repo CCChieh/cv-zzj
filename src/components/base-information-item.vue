@@ -1,6 +1,6 @@
 <template>
   <div class="row q-py-sm q-px-md items-center item">
-   <div class="text-weight-bolder text-subtitle2">{{ label }}：</div>{{ text }}
+   <div class="text-weight-bolder">{{ label }}：</div>{{ text }}
   </div>
 </template>
 
