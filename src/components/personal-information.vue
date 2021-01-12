@@ -1,6 +1,6 @@
 <template>
   <div class="row justify-between">
-    <div class="col-12 col-md-3 q-py-md q-py-md-none column justify-center items-center items-md-start q-col-gutter-md">
+    <div class="col-3  column justify-center q-col-gutter-md">
 
       <div class="text-h3 text-weight-bold ">
         {{ personal.name }}
@@ -19,7 +19,7 @@
       </div>
     </div>
     <!--    基本信息-->
-    <div class="col-12 col-sm-6 col-md-4 q-py-md q-py-md-none text-grey-8 column justify-center">
+    <div class="col-4 text-grey-8 column justify-center">
       <base-information-item
         label="年龄"
         :text="age(personal.birthday)"/>
@@ -34,7 +34,7 @@
         :text="personal.college"/>
     </div>
     <!--    联系方式-->
-    <div class="col-12 col-sm-6  col-md-3 q-py-md q-py-md-none text-grey-8">
+    <div class="col-3 text-grey-8">
       <contact-way-item
         :text="personal.email"
         :href="'mailto:'+personal.email"
