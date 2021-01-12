@@ -2,10 +2,9 @@
   <q-drawer
     class="print-hide"
     content-class="bg-blue-grey-1"
-    show-if-above
     :breakpoint="0"
-    :value="left"
-    :overlay="$q.screen.lt.lg"
+    :value="$store.getters['app/leftDrawer']"
+    :overlay="!$q.screen.gt.md"
     side="left" bordered>
     <!-- drawer content -->
   </q-drawer>
@@ -13,13 +12,7 @@
 
 <script>
 export default {
-  name: 'LayoutDrawer',
-  props: {
-    left: {
-      type: Boolean,
-      default: true
-    }
-  }
+  name: 'LayoutDrawer'
 }
 </script>
 
