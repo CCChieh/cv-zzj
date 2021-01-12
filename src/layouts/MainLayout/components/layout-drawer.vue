@@ -6,13 +6,20 @@
     :value="$store.getters['app/leftDrawer']"
     :overlay="!$q.screen.gt.md"
     side="left" bordered>
-    <!-- drawer content -->
+    <div class="column q-pa-md">
+      <q-btn unelevated @click="print()" color="blue-grey-8" label="打印简历"></q-btn>
+    </div>
   </q-drawer>
 </template>
 
 <script>
 export default {
-  name: 'LayoutDrawer'
+  name: 'LayoutDrawer',
+  methods: {
+    print () {
+      window.print()
+    }
+  }
 }
 </script>
 
