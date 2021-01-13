@@ -6,6 +6,7 @@
         <personal-information></personal-information>
         <skill-list></skill-list>
         <project-list></project-list>
+        <honor-list></honor-list>
       </div>
     </div>
   </q-page>
@@ -16,10 +17,12 @@
 import PersonalInformation from 'components/personalInformation'
 import SkillList from 'components/skillList'
 import ProjectList from 'components/projectList'
+import HonorList from 'components/honorList'
 
 export default {
   name: 'PageIndex',
   components: {
+    HonorList,
     ProjectList,
     SkillList,
     PersonalInformation
