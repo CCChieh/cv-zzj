@@ -13,7 +13,7 @@
       </q-toolbar-title>
     </q-toolbar>
 
-    <q-tabs class="a4-container" inline-label align="justify" @input="jump">
+    <q-tabs class="a4-container q-tabs__content--align-justify" inline-label align="justify" @input="jump">
       <q-tab name="zhihu" icon="fab fa-zhihu">
         <q-tooltip>
           {{ link.zhihu }}
