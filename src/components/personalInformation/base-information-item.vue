@@ -1,5 +1,5 @@
 <template>
-  <div class="row q-py-sm q-px-md items-center item">
+  <div class="row q-py-xs q-px-md items-center item">
    <div class="text-weight-bolder">{{ label }}：</div>{{ text }}
   </div>
 </template>

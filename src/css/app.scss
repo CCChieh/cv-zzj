@@ -23,7 +23,7 @@ a:link, a:active, a:hover, a:visited {
 
 .a4 {
   max-width: 21cm;
-  min-height: 29.7cm;
+  height: 29.7cm;
   border-radius: 5px;
   background: white;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
@@ -34,7 +34,7 @@ a:link, a:active, a:hover, a:visited {
     padding: 24px 24px;
     border-radius: initial;
     width: initial;
-    min-height: initial;
+    height: initial;
     box-shadow: initial;
   }
 
@@ -62,7 +62,8 @@ a:link, a:active, a:hover, a:visited {
     z-index: 9998 !important;
     border: initial;
     border-radius: initial;
-    width: initial!important;
+    width: 210mm!important;
+    height: 297mm;
     min-height: initial;
     box-shadow: initial;
     background: initial;

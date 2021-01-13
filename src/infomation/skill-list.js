@@ -1,7 +1,7 @@
 // 相关网站的链接
 const skillList = [
   '在项目的开发、运维、部署中熟练使用Docker、Dockerfile、Docker-compose',
-  '运用并实践过CI/CD流程',
+  '熟练运用并实践CI/CD',
   '实际使用过Java、Go、Python、JS作为开发语言',
   '后端开发有Spring Boot、Spring Cloud、Gin、Django等框架经验',
   '前端开发有Vue、Quasar、Element UI等框架经验',

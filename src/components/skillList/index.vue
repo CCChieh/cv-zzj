@@ -1,7 +1,10 @@
 <template>
   <base-box label="专业技能">
-    <div class="q-py-xs row items-center" v-for="(skill,idx) in skillList" :key="idx">
-      <q-icon class="q-pr-md" :name="idx%2===1?'far fa-star':'fas fa-star'"/>{{ skill }}
+    <div class="q-gutter-y-xs">
+      <div class="row items-center" v-for="(skill,idx) in skillList" :key="idx">
+        <q-icon class="q-pr-md" :name="idx%2===1?'far fa-star':'fas fa-star'"/>
+        {{ skill }}
+      </div>
     </div>
   </base-box>
 </template>
