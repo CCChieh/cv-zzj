@@ -14,7 +14,7 @@
       </q-btn>
       <q-separator spaced="12px" color="blue-grey-8"></q-separator>
       <div class="q-gutter-y-md">
-        <div class="text-h5 text-weight-bold text-center">关于本页</div>
+<!--        <div class="text-h5 text-weight-bold text-center">关于本页</div>-->
         <div class="row items-center">
           <div class="text-subtitle1 text-weight-bold">
             技术栈:
