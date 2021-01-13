@@ -25,6 +25,8 @@ a:link, a:active, a:hover, a:visited {
   }
   .a4 {
     margin: 0;
+    position: relative;
+    z-index: 9998 !important;
     border: initial;
     border-radius: initial;
     width: initial;
@@ -39,6 +41,9 @@ a:link, a:active, a:hover, a:visited {
   }
   .q-page-container{
     padding: 0!important;
+  }
+  .q-tooltip{
+    display: none;
   }
 }
 
