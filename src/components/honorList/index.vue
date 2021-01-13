@@ -1,6 +1,11 @@
 <template>
   <base-box label="获奖经历">
-    hahah
+    hahah<br>
+    hahah<br>
+    hahah<br>
+    hahah<br>
+    hahah<br>
+    hahah<br>
   </base-box>
 </template>
 

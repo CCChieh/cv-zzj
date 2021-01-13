@@ -1,6 +1,6 @@
 <template>
   <base-box label="专业技能">
-    hahah
+    hahah<br>hahah<br>hahah<br>hahah<br>hahah<br>
   </base-box>
 </template>
 

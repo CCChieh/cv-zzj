@@ -2,11 +2,11 @@
   <div class="row justify-between">
     <!--    响应式只能这么些，如果直接使用quasar的类在打印机中输出会有问题-->
     <!--    名字-->
-    <name-part :class="$q.screen.gt.sm?'col-3':'col-12 items-center'"/>
+    <name-part class="name-part"/>
     <!--    基本信息-->
-    <information-part :class="$q.screen.gt.sm?'col-4':'col-12 q-py-md'"/>
+    <information-part class="information-part"/>
     <!--    联系方式-->
-    <contact-part :class="$q.screen.gt.sm?'col-3':'col-12 q-py-md'"/>
+    <contact-part class="contact-part"/>
   </div>
 </template>
 
@@ -41,6 +41,31 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.name-part {
+  height: auto;
+  width: 25%;
+  @media only screen and (max-width: $breakpoint-sm) {
+    width: 100%;
+    align-items: center;
+  }
+}
 
+.information-part {
+  height: auto;
+  width: 33.333333%;
+  @media only screen and (max-width: $breakpoint-sm) {
+    width: 100%;
+    padding: 16px 0;
+  }
+}
+
+.contact-part {
+  height: auto;
+  width: 25%;
+  @media only screen and (max-width: $breakpoint-sm) {
+    width: 100%;
+    padding: 16px 0;
+  }
+}
 </style>

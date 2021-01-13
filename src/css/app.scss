@@ -1,7 +1,7 @@
 // app global css in SCSS form
 
 // 约束图片，避免溢出
-img{
+img {
   max-width: 100%;
 }
 
@@ -9,45 +9,14 @@ a:link, a:active, a:hover, a:visited {
   color: unset;
   text-decoration: none
 }
-@page {
-  size: A4;
-  margin: 0;
-}
-.print-hide{
+
+.print-hide {
   @media print {
     display: none;
   }
 }
-@media print {
-  html, body {
-    width: 210mm;
-    height: 297mm;
-  }
-  .a4 {
-    margin: 0;
-    position: relative;
-    z-index: 9998 !important;
-    border: initial;
-    border-radius: initial;
-    width: initial;
-    min-height: initial;
-    box-shadow: initial;
-    background: initial;
-    page-break-after: always;
-  }
 
-  .q-layout{
-    background: white!important;
-  }
-  .q-page-container{
-    padding: 0!important;
-  }
-  .q-tooltip{
-    display: none;
-  }
-}
-
-.a4-container{
+.a4-container {
   max-width: 21cm;
   margin: auto;
 }
@@ -59,12 +28,54 @@ a:link, a:active, a:hover, a:visited {
   background: white;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
   margin: 8mm auto;
-  @media (max-width: $breakpoint-sm) {
+  padding: 24px 48px;
+  @media only screen and (max-width: $breakpoint-sm) {
     margin: 0 auto;
+    padding: 24px 24px;
     border-radius: initial;
     width: initial;
     min-height: initial;
     box-shadow: initial;
   }
+
+  .q-timeline__content {
+    padding: 0;
+  }
+
+  .q-timeline__subtitle {
+    display: none;
+  }
 }
 
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  html, body {
+    width: 210mm!important;
+    height: 297mm;
+  }
+  .a4 {
+    margin: 0;
+    position: relative;
+    z-index: 9998 !important;
+    border: initial;
+    border-radius: initial;
+    width: initial!important;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+
+  .q-layout {
+    background: white !important;
+  }
+  .q-page-container {
+    padding: 0 !important;
+  }
+  .q-tooltip {
+    display: none;
+  }
+}
