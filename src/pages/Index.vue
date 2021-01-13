@@ -1,12 +1,29 @@
 <template>
   <q-page>
     <!--    page1-->
-    <div class="a4 q-py-lg q-px-xl ">
+    <div class="a4">
       <div class="q-gutter-y-md">
         <personal-information></personal-information>
-        <skill-list></skill-list>
-        <project-list></project-list>
-        <honor-list></honor-list>
+        <q-timeline>
+          <q-timeline-entry
+            color="blue-grey-8"
+            icon="fas fa-wrench"
+          >
+            <skill-list></skill-list>
+          </q-timeline-entry>
+          <q-timeline-entry
+            color="blue-grey-8"
+            icon="fas fa-tasks"
+          >
+            <project-list></project-list>
+          </q-timeline-entry>
+          <q-timeline-entry
+            color="blue-grey-8"
+            icon="fas fa-award"
+          >
+            <honor-list></honor-list>
+          </q-timeline-entry>
+        </q-timeline>
       </div>
     </div>
   </q-page>
