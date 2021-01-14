@@ -5,7 +5,6 @@ const personal = {
   wechat: 'toi-toi-toi',
   github: 'CCChieh',
   zhihu: 'toi-toi-toi',
-  mobilePhone: '15946882199',
   birthday: new Date(1997, 10, 25), // 生日，年月日
   degree: '硕士',
   location: '上海',
