@@ -12,22 +12,22 @@
           <a class="col" :href="project.demo">{{ project.demo }}</a>
         </div>
 
-        <div class="row">
+        <div v-if="project.detail" class="row">
           <div class="text-weight-bold text-subtitle2 col-auto">项目介绍：</div>
           <div class="col">{{ project.detail }}</div>
         </div>
 
-        <div class="row">
+        <div v-if="project.technology" class="row">
           <div class="text-weight-bold text-subtitle2 col-auto">相关技术：</div>
           <div class="col">
-            <div v-for="(tech,idx) in project.technology" :key="idx">{{ tech }}</div>
+            <div v-for="(tech,idx) in project.technology" :key="idx">{{idx+1}}. {{ tech }}</div>
           </div>
         </div>
 
         <div class="row">
           <div class="text-weight-bold text-subtitle2 col-auto">主要职责：</div>
           <div class="col">
-            <div v-for="(duty,idx) in project.duty" :key="idx">{{ duty }}</div>
+            <div v-for="(duty,idx) in project.duty" :key="idx">⭐{{ duty }}</div>
           </div>
         </div>
       </div>
