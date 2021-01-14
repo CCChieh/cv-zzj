@@ -6,7 +6,7 @@ const projectList = [
     detail: '“水杉在线”是华东师范大学数据科学与工程学院推出的新一代数字化全链路在线学习平台，是一个面向学生“学”、“练”、“测”、“创”一体的综合性学习社区。',
     technology: [
       '前端：Vue+Quasar+Element UI；',
-      '后端：Spring Cloud+Shiro+Mybatis+Redis+MySql',
+      '后端：Spring Cloud + Shiro + Mybatis + Redis + MySql',
       '采用微服务架构，完整的CI/CD支持，使用Docker进行打包部署'
     ],
     duty: [
