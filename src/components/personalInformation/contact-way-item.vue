@@ -1,5 +1,5 @@
 <template>
-  <div class="row q-py-sm q-px-md items-center item">
+  <div class="row q-py-xs q-px-md items-center item">
     <a v-if="href" :href="href" target="_blank" class="row items-center">
       <q-icon class="q-pr-md" :name="icon" size="xs"/>
       {{ text }}</a>

@@ -2,7 +2,7 @@
   <q-page>
     <!--    page1-->
     <div class="a4">
-      <div class="q-gutter-y-md">
+      <div>
         <personal-information></personal-information>
         <q-timeline>
           <q-timeline-entry

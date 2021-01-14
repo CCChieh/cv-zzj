@@ -1,15 +1,26 @@
 <template>
   <base-box label="专业技能">
-    hahah<br>hahah<br>hahah<br>hahah<br>hahah<br>
+    <div class="q-gutter-y-xs">
+      <div class="row items-center" v-for="(skill,idx) in skillList" :key="idx">
+        <q-icon class="q-pr-md" :name="idx%2===1?'far fa-star':'fas fa-star'"/>
+        {{ skill }}
+      </div>
+    </div>
   </base-box>
 </template>
 
 <script>
 import BaseBox from 'components/base/base-box'
+import skillList from 'src/infomation/skill-list'
 
 export default {
   name: 'skill-list',
-  components: { BaseBox }
+  components: { BaseBox },
+  data () {
+    return {
+      skillList: skillList
+    }
+  }
 }
 </script>
 

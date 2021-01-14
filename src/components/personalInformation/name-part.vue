@@ -1,5 +1,5 @@
 <template>
-  <div class="column justify-center q-col-gutter-md">
+  <div class="column justify-center q-col-gutter-xs">
 
     <div class="text-h3 text-weight-bold ">
       {{ personal.name }}
