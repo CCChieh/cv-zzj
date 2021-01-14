@@ -10,8 +10,8 @@
       label="学校"
       :text="personal.school"/>
     <base-information-item
-      label="手机"
-      :text="personal.mobilePhone"/>
+      label="学院"
+      :text="personal.college"/>
   </div>
 </template>
 
