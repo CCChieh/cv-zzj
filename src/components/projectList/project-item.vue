@@ -27,7 +27,7 @@
         <div class="row">
           <div class="text-weight-bold text-subtitle2 col-auto">主要职责：</div>
           <div class="col">
-            <div v-for="(duty,idx) in project.duty" :key="idx">⭐{{ duty }}</div>
+            <div v-for="(duty,idx) in project.duty" :key="idx"><q-icon class="q-pr-md" name="fas fa-star"/>{{ duty }}</div>
           </div>
         </div>
       </div>
