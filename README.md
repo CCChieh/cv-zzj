@@ -4,7 +4,11 @@
 
 Demo：https://zzj.cool
 
+推荐使用Chrome访问
+
 特点：
+
+* 可导出A4版面PDF
 
 * 支持直接打印A4版面简历
 
