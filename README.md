@@ -1,26 +1,20 @@
-# Quasar App (cv-zzj)
+# CV-ZZJ
 
-A Quasar Framework app
+个人简历项目，使用Vue+Quasar完成
 
-## Install the dependencies
-```bash
-yarn
-```
+Demo：https://zzj.cool
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+特点：
 
-### Lint the files
-```bash
-yarn run lint
-```
+* 支持直接打印A4版面简历
 
-### Build the app for production
-```bash
-quasar build
-```
+* 支持响应式布局
 
-### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+* Action + Github Page 快速构建个人简历主页
+
+简历信息单独存放在`src/infomation`，可以根据自己需要进行修改
+
+使用方式：
+* `npm install` 安装
+* `npm run dev` 运行项目
+* `npm run build` 打包编译，打包后的文件存储在dist目录下
